@@ -47,14 +47,12 @@ console.log(response)
         console.log(JSON.parse(data));
     })
 })
-    //request.write(jsonData);
+    request.write(jsonData);
     request.end();
 
 });
 
     app.post('/failure', (req, res) => res.redirect('/'));
-app.listen(port, () => console.log("hello"));
+    app.listen(process.env.PORT || port, () => console.log("Server is running"));
 
 
-//bfc25c22a8e1dcf606ff2af602d7f608-us19
-//53caad4bc0 
