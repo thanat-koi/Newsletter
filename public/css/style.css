@@ -48,3 +48,8 @@ body {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+.mb-4 {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+}
